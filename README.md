@@ -17,14 +17,40 @@ Fork and clone this repository and answer questions as you research directly in 
 ## Questions:
 
 1. What does the term noSQL refer to, and what other term is often used synonymously with noSQL?
-1. What are some of the common arguments for using a non-relational versus a relational db?
-1. In this class we will be using the document style of non-relational databases. What are the charecteristics of a document based db? 
-1. In this class we will be using Mongo specificially as our no-SQL db. Look into Mongo and answer this question: what is the priamry difference between how Mongo is maintained vrs SQL?
-1. Mongo DBs are organized into documents. Describe an example of a table in SQL that contains users, and then describe the equivalent DB setup in Mongo. 
-1. What is an example situation where a Mongo database makes sense versus a non-relational db?
-1. What are the benefits of SQL databases? NoSQL Databases?
-1. Explain the differences between ACID and BASE models.
-1. What should you consider when deciding between using a relational database or a non-relational database for your project?
+
+-The term noSQL is increasingly used in big data storage management and real-time web applications, and the term non-relational database is used synonymously.
+
+2. What are some of the common arguments for using a non-relational versus a relational db?
+
+-Relational databases are also the best choice if relationships between entities are important, if the data you are storing needs to be flexible in terms of shape or size, or if it needs to be open to change in future, then a non-relational database is the answer. Non-relational databases offer higher performance and availability.
+
+3. In this class we will be using the document style of non-relational databases. What are the charecteristics of a document based db? 
+
+-Relational databases store data in rows and columns like a spreadsheet while non-relational databases store data don't.
+
+4. In this class we will be using Mongo specificially as our no-SQL db. Look into Mongo and answer this question: what is the priamry difference between how Mongo is maintained vrs SQL?
+
+-MongoDB stores data in JSON format with key and value pairs for each entity whereas SQL Databases stores data as a record in a row of the table.
+
+5. Mongo DBs are organized into documents. Describe an example of a table in SQL that contains users, and then describe the equivalent DB setup in Mongo. 
+
+-MongoDB stores data objects in collections and documents instead of the tables and rows used in traditional relational databases, these are made unique for users by using key/value pairs.
+
+6. What is an example situation where a Mongo database makes sense versus a relational db?
+
+-They are more suitable for unstructured big data. Working w/large amount of unstructured/semi-structured data, need the database to scale horizontally, streamline development & avoid overhead, doesn’t require high level of data integrity.
+
+7. What are the benefits of SQL databases? NoSQL Databases?
+
+-If you’re creating a project where the data is predictable, in terms of structure, size, and frequency of access, relational databases are still the best choice. Modern NoSQL databases have been designed for the cloud, making them naturally good for horizontal scaling where a lot of smaller servers can be spun up to handle increased load.
+
+8. Explain the differences between ACID and BASE models.
+
+-The CAP theorem states that it is impossible to achieve both consistency and availability in a partition tolerant distributed system (i.e., a system which continues to work in cases of temporary communication breakdowns). The fundamental difference between ACID and BASE database models is the way they deal with this limitation. The BASE model provides high availability.
+
+9.  What should you consider when deciding between using a relational database or a non-relational database for your project?
+
+-Relational databases store data in rows and columns like a spreadsheet while non-relational databases store data don’t, using a storage model (one of four) that is best suited for the type of data it’s storing. Things to consider; What type of data will you be analyzing? How much data are you dealing with? What kind of resources can you devote to the setup and maintenance of your database? Do you need real-time data?
 
 
 ## Visual Comparisons
